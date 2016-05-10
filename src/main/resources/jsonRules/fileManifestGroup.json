@@ -1,0 +1,14 @@
+{
+  "xpathmapping": {
+    "dc:subject": "//FileManifestGroupMessage/FileManifestGroup/Subject",
+    "classification": "concat-all(//FileManifestGroupMessage/FileManifestGroup/FileManifest/Classification/Key, //FileManifestGroupMessage/FileManifestGroup/FileManifest/Classification/Value)",
+    "dc:publisher": "//FileManifestGroupMessage/FileManifestGroup/Owner",
+    "dc:creator": "//FileManifestGroupMessage/FileManifestGroup/Owner",
+    "dc:source": "//FileManifestGroupMessage/FileManifestGroup/Source",
+    "dc:date": "//FileManifestGroupMessage/FileManifestGroup/TimePeriod/Date",
+    "dc:identifier": "//FileManifestGroupMessage/FileManifestGroup/FileGroupUuid",
+    "dc:coverage": "//FileManifestGroupMessage/FileManifestGroup/TerritorialCoverage",
+    "dc:relation": "//FileManifestGroupMessage/FileManifestGroup/FileManifest/FileDetails/FileUuid"
+  },
+  "xpathnsprefix": {"fmns": "http://schemas.umusic.com/umg.eai.data-lake-messages.v1"}
+}

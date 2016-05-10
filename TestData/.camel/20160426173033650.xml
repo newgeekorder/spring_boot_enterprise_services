@@ -1,0 +1,1359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ass:DigitalAssetMessage xmlns:core="http://schemas.umusic.com/umg.eai.core.v1"
+                         xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+                         xmlns:ass="http://schemas.umusic.com/umg.eai.asset-messages.v1">
+    <MessageHeader>
+        <MessageId>2829d3cf-50e0-470a-8b04-77b547a15d4c</MessageId>
+        <MessageSource>Aspen</MessageSource>
+        <MessageUtcDateTimeStamp>2016-04-26T17:30:33.65Z</MessageUtcDateTimeStamp>
+        <ResourceType>DigitalAssetMessage</ResourceType>
+        <ResourceId>fffc431b-8a57-43e1-b72a-c22cb95c9ed2</ResourceId>
+        <ResourceUtcDateTimeStamp>2016-04-26T17:30:33.65Z</ResourceUtcDateTimeStamp>
+        <SchemaVersion>1.0</SchemaVersion>
+        <DefaultLanguageScriptCode>en</DefaultLanguageScriptCode>
+    </MessageHeader>
+    <DigitalAsset>
+        <MediaType>Audio</MediaType>
+        <DigitalAssetStatus>Active</DigitalAssetStatus>
+        <AccessControlStatus>Public</AccessControlStatus>
+        <DigitalAssetIdentifier Type="AspenId" IsPrimaryId="true">fffc431b-8a57-43e1-b72a-c22cb95c9ed2
+        </DigitalAssetIdentifier>
+        <Version>Production Master</Version>
+        <Release>
+            <ReleaseIdentifier Type="UPC" IsPrimaryId="false">00008811204228</ReleaseIdentifier>
+            <ReleaseTitle LanguageScriptCode="en">
+                <Title>Let The Good Times Roll: The Music Of Louis Jordan</Title>
+            </ReleaseTitle>
+            <Artist>
+                <PartyName>
+                    <Name>B.B. King</Name>
+                </PartyName>
+            </Artist>
+        </Release>
+        <Resource>
+            <Index>
+                <Sequence>14</Sequence>
+                <Duration>PT2M38.626S</Duration>
+            </Index>
+            <ResourceIdentifier Type="ISRC" IsPrimaryId="false">USMC19959526</ResourceIdentifier>
+            <ResourceTitle LanguageScriptCode="en">
+                <Title>It's A Great, Great Pleasure</Title>
+            </ResourceTitle>
+        </Resource>
+        <AudioChannelConfiguration>Stereo</AudioChannelConfiguration>
+        <AudioMediaFile>
+            <ContainerFormat>ds</ContainerFormat>
+            <FileName>USMC19959526.wma</FileName>
+            <Md5CheckSum>078AA03A1B0B3142A2D0354BC1AD606F</Md5CheckSum>
+            <FileSize_Bytes>18744815</FileSize_Bytes>
+            <Duration>PT2M38.626S</Duration>
+            <AudioCodec>wma</AudioCodec>
+            <AudioBitDepth_BitsPerSample>16</AudioBitDepth_BitsPerSample>
+            <AudioSampleRate_Hz>44100</AudioSampleRate_Hz>
+            <NumberOfAudioChannels>2</NumberOfAudioChannels>
+        </AudioMediaFile>
+        <PreviewAvailable PreviewAssetId="046e5730-ce31-4575-8213-96fcdb7685ad">Audio</PreviewAvailable>
+        <PreviewAvailable PreviewAssetId="9dc88655-e516-4e8e-8143-7c95f597bd97">AudioClip</PreviewAvailable>
+        <MusicDescriptionWrapper>
+            <musicdescription xmlns="http://www.ircam.fr/musicdescription/1.2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                              xsi:schemaLocation="http://www.ircam.fr/musicdescription/1.2 http://recherche.ircam.fr/anasyn/xsd/musicdescription_1.2.xsd"
+                              format="20150421A" date="2015-12-19">
+                <media>D:\BWITasks\_19688567.task\51379174b76f49a98268c0907ba64e29.wav</media>
+                <descriptiondefinition id="1">
+                    <type>tagtype</type>
+                    <generator name="ircamautotagging_genre" version="0.1.0" date="2015-12-19"/>
+                    <dictionary>
+                        <label name="Electronica"/>
+                        <label name="Soul/Funk"/>
+                        <label name="RnB"/>
+                        <label name="Jazz"/>
+                        <label name="Pop/Rock"/>
+                        <label name="Latin"/>
+                        <label name="Rap"/>
+                        <label name="Metal/Punk"/>
+                        <label name="Blues"/>
+                        <label name="Reggae"/>
+                        <label name="Classical"/>
+                    </dictionary>
+                </descriptiondefinition>
+                <descriptiondefinition id="2">
+                    <type>tagtype</type>
+                    <generator name="ircamautotagging_instrumentation" version="0.1.0" date="2015-12-19"/>
+                    <dictionary>
+                        <label name="Heavy rock/metal drum kit"/>
+                        <label name="Jazz/country/soul drum kit"/>
+                        <label name="Light pop/rock drum kit"/>
+                        <label name="Electronic drum kit"/>
+                        <label name="Acoustic guitar"/>
+                        <label name="Electric guitar"/>
+                        <label name="Acoustic"/>
+                        <label name="Strings (Orchestra)"/>
+                        <label name="Brass"/>
+                        <label name="Electronic"/>
+                        <label name="Piano"/>
+                    </dictionary>
+                </descriptiondefinition>
+                <descriptiondefinition id="3">
+                    <type>tagtype</type>
+                    <generator name="ircamautotagging_mood" version="0.1.0" date="2015-12-19"/>
+                    <dictionary>
+                        <label name="Calm"/>
+                        <label name="Dynamic"/>
+                        <label name="Sad"/>
+                        <label name="Happy"/>
+                        <label name="Romantic"/>
+                    </dictionary>
+                </descriptiondefinition>
+                <descriptiondefinition id="4">
+                    <type>beattype</type>
+                    <generator name="ircambeat" version="1.13.0" date="2015-12-19"/>
+                </descriptiondefinition>
+                <descriptiondefinition id="5">
+                    <type>rhythmtype</type>
+                    <generator name="ircambeat" version="1.13.0" date="2015-12-19"/>
+                </descriptiondefinition>
+                <descriptiondefinition id="6">
+                    <type>chordtype</type>
+                    <generator name="ircamchord" version="1.3.1" date="2015-12-19"/>
+                    <dictionary>
+                        <label name="Cmaj"/>
+                        <label name="Cmin"/>
+                        <label name="Dbmaj"/>
+                        <label name="Dbmin"/>
+                        <label name="Dmaj"/>
+                        <label name="Dmin"/>
+                        <label name="Ebmaj"/>
+                        <label name="Ebmin"/>
+                        <label name="Emaj"/>
+                        <label name="Emin"/>
+                        <label name="Fmaj"/>
+                        <label name="Fmin"/>
+                        <label name="Gbmaj"/>
+                        <label name="Gbmin"/>
+                        <label name="Gmaj"/>
+                        <label name="Gmin"/>
+                        <label name="Abmaj"/>
+                        <label name="Abmin"/>
+                        <label name="Amaj"/>
+                        <label name="Amin"/>
+                        <label name="Bbmaj"/>
+                        <label name="Bbmin"/>
+                        <label name="Bmaj"/>
+                        <label name="Bmin"/>
+                    </dictionary>
+                </descriptiondefinition>
+                <descriptiondefinition id="7">
+                    <type>harmonictype</type>
+                    <generator name="ircamkeymode" version="1.4.3" date="2015-12-19"/>
+                </descriptiondefinition>
+                <descriptiondefinition id="8">
+                    <type>structtype</type>
+                    <generator name="ircamstructure" version="1.8.1" date="2015-12-19"/>
+                    <dictionary>
+                        <label name="1"/>
+                        <label name="2"/>
+                        <label name="3"/>
+                        <label name="4"/>
+                        <label name="5"/>
+                        <label name="6"/>
+                        <label name="7"/>
+                        <label name="8"/>
+                    </dictionary>
+                </descriptiondefinition>
+                <descriptiondefinition id="9">
+                    <type>structtype</type>
+                    <generator name="ircamsummary" version="1.8.1" date="2015-12-19"/>
+                    <dictionary>
+                        <label name="1"/>
+                    </dictionary>
+                </descriptiondefinition>
+                <segment time="0.0000000000" length="14.2500000000" sourcetrack="0">
+                    <structtype id="8" value="3"/>
+                </segment>
+                <segment time="0.0000000000" length="3.8792390010" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="0.0972888876" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="0.7010077085" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="1.2873115634" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="1.8620054409" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="2.4366993185" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="3.0171981847" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="3.5918920622" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="3.8792390010" length="3.4887981859" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="4.1665859398" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="4.7470848060" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="5.3333886609" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="5.9254975044" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="6.5001913819" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="7.0748852595" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="7.3680371869" length="1.7647165533" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="7.6611891144" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="8.2532979579" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="8.8396018128" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="9.1327537402" length="1.7647165533" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="9.4259056677" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="10.0122095225" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="10.6043183661" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="10.8974702935" length="4.6439909297" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="11.1906222209" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="11.7769260758" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="12.3632299307" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="12.9437287969" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="13.5300326518" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="14.1163365067" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="14.2500000000" length="29.0000000000" sourcetrack="0">
+                    <structtype id="8" value="1"/>
+                </segment>
+                <segment time="14.6968353729" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="15.2715292504" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="15.5414612232" length="0.2699319728" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="15.8113931960" length="0.2902494331" sourcetrack="0">
+                    <chordtype id="6" value="Fmaj"/>
+                </segment>
+                <segment time="15.8113931960" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="16.1016426291" length="1.1580952381" sourcetrack="0">
+                    <chordtype id="6" value="Bbmaj"/>
+                </segment>
+                <segment time="16.3918920622" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="16.9723909284" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="17.2597378672" length="0.5775963719" sourcetrack="0">
+                    <chordtype id="6" value="Fmaj"/>
+                </segment>
+                <segment time="17.5470848060" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="17.8373342391" length="1.2074376417" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="18.1275836722" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="18.7138875271" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="19.0447718808" length="0.6472562358" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="19.3756562346" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="19.6920281166" length="1.8024489796" sourcetrack="0">
+                    <chordtype id="6" value="Bbmaj"/>
+                </segment>
+                <segment time="20.0025950101" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="20.5540689330" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="21.1403727878" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="21.4944770962" length="0.2844444444" sourcetrack="0">
+                    <chordtype id="6" value="Gmin"/>
+                </segment>
+                <segment time="21.7266766427" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="21.7789215407" length="1.4367346939" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="22.3303954636" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="22.9166993185" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="23.2156562346" length="1.7850340136" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="23.5146131507" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="24.1125269829" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="24.7046358264" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="25.0006902482" length="1.7560090703" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="25.2967446699" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="25.8830485248" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="26.4635473910" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="26.7566993185" length="1.1784126984" sourcetrack="0">
+                    <chordtype id="6" value="Amin"/>
+                </segment>
+                <segment time="27.0498512459" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="27.6419600894" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="27.9351120169" length="0.5892063492" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="28.2340689330" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="28.5243183661" length="1.1842176871" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="28.8203727878" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="29.4066766427" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="29.7085360531" length="0.5950113379" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="30.0045904749" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="30.3035473910" length="0.2989569161" sourcetrack="0">
+                    <chordtype id="6" value="Fmaj"/>
+                </segment>
+                <segment time="30.6025043071" length="1.4802721088" sourcetrack="0">
+                    <chordtype id="6" value="Bbmaj"/>
+                </segment>
+                <segment time="30.6025043071" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="31.1888081620" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="31.7867219942" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="32.0827764160" length="0.2960544218" sourcetrack="0">
+                    <chordtype id="6" value="Gmin"/>
+                </segment>
+                <segment time="32.3788308377" length="0.8794557823" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="32.3788308377" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="32.9593297039" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="33.2582866200" length="0.2989569161" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="33.5572435361" length="0.2902494331" sourcetrack="0">
+                    <chordtype id="6" value="Fmaj"/>
+                </segment>
+                <segment time="33.5572435361" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="33.8474929692" length="2.9402267574" sourcetrack="0">
+                    <chordtype id="6" value="Bbmaj"/>
+                </segment>
+                <segment time="34.1377424024" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="34.7240462572" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="35.3103501121" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="35.8966539670" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="36.4887628105" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="36.7877197266" length="0.6298412698" sourcetrack="0">
+                    <chordtype id="6" value="Fmaj"/>
+                </segment>
+                <segment time="37.0866766427" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="37.4175609965" length="1.7618140590" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="37.7484453502" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="38.3405541937" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="38.8920281166" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="39.1793750554" length="3.5294331066" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="39.4667219942" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="40.0530258491" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="40.6451346926" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="41.2314385475" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="41.8177424024" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="42.4040462572" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="42.7088081620" length="1.7763265306" sourcetrack="0">
+                    <chordtype id="6" value="Emin"/>
+                </segment>
+                <segment time="43.0135700668" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="43.2500000000" length="8.5000000000" sourcetrack="0">
+                    <structtype id="8" value="4"/>
+                </segment>
+                <segment time="43.6114838990" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="44.1919827652" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="44.4851346926" length="2.9228117914" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="44.7782866200" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="45.3703954636" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="45.9508943298" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="46.5371981847" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="47.1176970509" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="47.4079464840" length="0.5834013605" sourcetrack="0">
+                    <chordtype id="6" value="Cmin"/>
+                </segment>
+                <segment time="47.6981959171" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="47.9913478445" length="1.7502040816" sourcetrack="0">
+                    <chordtype id="6" value="Ebmaj"/>
+                </segment>
+                <segment time="48.2844997720" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="48.8708036268" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="49.4513024931" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="49.7415519262" length="0.2902494331" sourcetrack="0">
+                    <chordtype id="6" value="Gmin"/>
+                </segment>
+                <segment time="50.0318013593" length="1.4599546485" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="50.0318013593" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="50.6181052141" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="51.2044090690" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="51.4917560078" length="1.1551927438" sourcetrack="0">
+                    <chordtype id="6" value="Emin"/>
+                </segment>
+                <segment time="51.7500000000" length="19.0000000000" sourcetrack="0">
+                    <structtype id="8" value="3"/>
+                </segment>
+                <segment time="51.7791029466" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="52.3596018128" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="52.6469487516" length="0.5282539683" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="52.9342956903" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="53.1752027198" length="1.6282993197" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="53.4161097493" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="53.9443637175" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="54.5190575951" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="54.8035020395" length="3.5004081633" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="55.0879464840" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="55.6858603162" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="56.2721641711" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="56.8526630373" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="57.4389668922" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="58.0136607697" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="58.3039102028" length="2.8966893424" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="58.5941596359" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="59.1688535135" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="59.7533786848" length="30.0000000000" sourcetrack="0">
+                    <structtype id="9" value="1"/>
+                </segment>
+                <segment time="59.7551573683" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="60.3356562346" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="60.9103501121" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="61.2005995452" length="2.3248979592" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="61.4908489783" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="62.0771528332" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="62.6518467107" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="63.2381505656" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="63.5254975044" length="0.5775963719" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="63.8128444432" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="64.1030938763" length="0.5775963719" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="64.3933433094" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="64.6806902482" length="0.5746938776" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="64.9680371869" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="65.2553841257" length="1.7182766440" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="65.5427310645" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="66.1174249420" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="66.6863138309" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="66.9736607697" length="4.4988662132" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="67.2610077085" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="67.8066766427" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="68.3755655316" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="68.9328444432" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="69.5017333321" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="70.0474022663" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="70.6279011325" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="70.7500000000" length="22.5000000000" sourcetrack="0">
+                    <structtype id="8" value="1"/>
+                </segment>
+                <segment time="71.1851800441" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="71.4725269829" length="0.2873469388" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="71.7598739216" length="0.2873469388" sourcetrack="0">
+                    <chordtype id="6" value="Fmaj"/>
+                </segment>
+                <segment time="71.7598739216" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="72.0472208604" length="0.5717913832" sourcetrack="0">
+                    <chordtype id="6" value="Bbmaj"/>
+                </segment>
+                <segment time="72.3345677992" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="72.6190122436" length="0.2844444444" sourcetrack="0">
+                    <chordtype id="6" value="Gmin"/>
+                </segment>
+                <segment time="72.9034566881" length="2.0607709751" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="72.9034566881" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="73.4897605429" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="74.0644544205" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="74.6507582754" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="74.9642276631" length="2.3713378685" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="75.2776970509" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="75.8640009058" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="76.4561097493" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="77.0424136042" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="77.3355655316" length="1.7531065760" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="77.6287174590" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="78.2092163253" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="78.7955201801" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="79.0886721076" length="2.2552380952" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="79.3818240350" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="79.9623229012" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="80.5428217674" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="81.0536607697" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="81.3439102028" length="1.1668027211" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="81.6341596359" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="82.2204634908" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="82.5107129239" length="0.5804988662" sourcetrack="0">
+                    <chordtype id="6" value="Emin"/>
+                </segment>
+                <segment time="82.8009623570" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="83.0912117901" length="2.3278004535" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="83.3814612232" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="83.9677650781" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="84.5482639443" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="85.1229578219" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="85.4190122436" length="0.2960544218" sourcetrack="0">
+                    <chordtype id="6" value="Gmin"/>
+                </segment>
+                <segment time="85.7150666654" length="0.8707482993" sourcetrack="0">
+                    <chordtype id="6" value="Ebmaj"/>
+                </segment>
+                <segment time="85.7150666654" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="86.2955655316" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="86.5858149647" length="0.5804988662" sourcetrack="0">
+                    <chordtype id="6" value="Gmin"/>
+                </segment>
+                <segment time="86.8760643978" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="87.1663138309" length="1.7763265306" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="87.4565632640" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="88.0312571416" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="88.6117560078" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="88.9426403615" length="1.7531065760" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="89.2038648513" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="89.8308036268" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="90.4054975044" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="90.6957469375" length="1.1493877551" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="90.9859963706" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="91.5606902482" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="91.8451346926" length="0.5746938776" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="92.1295791370" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="92.4198285702" length="1.7211791383" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="92.7100780033" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="93.2500000000" length="4.5000000000" sourcetrack="0">
+                    <structtype id="8" value="8"/>
+                </segment>
+                <segment time="93.2847718808" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="93.8536607697" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="94.1410077085" length="3.4742857143" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="94.4283546473" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="94.9914385475" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="95.5719374137" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="96.1524362799" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="96.7387401348" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="97.3250439897" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="97.6152934228" length="1.7531065760" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="97.7500000000" length="27.7500000000" sourcetrack="0">
+                    <structtype id="8" value="2"/>
+                </segment>
+                <segment time="97.9055428559" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="98.4976516994" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="99.0781505656" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="99.3683999987" length="1.1580952381" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="99.6586494318" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="100.2333433094" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="100.5264952368" length="2.3103854875" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="100.8196471643" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="101.3943410418" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="101.9690349194" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="102.5495337856" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="102.8368807244" length="2.2958730159" sourcetrack="0">
+                    <chordtype id="6" value="Gmin"/>
+                </segment>
+                <segment time="103.1242276631" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="103.6989215407" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="104.2736154182" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="104.8483092958" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="105.1327537402" length="1.1522902494" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="105.4171981847" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="105.9976970509" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="106.2850439897" length="1.7095691610" sourcetrack="0">
+                    <chordtype id="6" value="Emin"/>
+                </segment>
+                <segment time="106.5723909284" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="107.1412798173" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="107.7101687062" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="107.9946131507" length="1.1319727891" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="108.2790575951" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="108.8479464840" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="109.1265859398" length="0.5601814059" sourcetrack="0">
+                    <chordtype id="6" value="Dmaj"/>
+                </segment>
+                <segment time="109.4052253956" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="109.6867673457" length="6.8673015873" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="109.9683092958" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="110.5313931960" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="111.0944770962" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="111.6633659851" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="112.2380598627" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="112.8069487516" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="113.3816426291" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="113.9563365067" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="114.5310303842" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="115.1173342391" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="115.6920281166" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="116.2667219942" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="116.5540689330" length="1.7327891156" sourcetrack="0">
+                    <chordtype id="6" value="Gmin"/>
+                </segment>
+                <segment time="116.8414158717" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="117.4219147380" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="117.9966086155" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="118.2868580486" length="1.7385941043" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="118.5771074817" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="119.1576063479" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="119.7381052141" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="120.0254521529" length="1.7240816327" sourcetrack="0">
+                    <chordtype id="6" value="Emin"/>
+                </segment>
+                <segment time="120.3127990917" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="120.8816879806" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="121.4621868468" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="121.7495337856" length="1.4135147392" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="122.0368807244" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="122.5999646246" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="123.1630485248" length="7.0936961451" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="123.1630485248" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="123.7261324250" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="124.2892163253" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="124.8523002255" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="125.4211891144" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="125.5000000000" length="13.5000000000" sourcetrack="0">
+                    <structtype id="8" value="6"/>
+                </segment>
+                <segment time="125.9900780033" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="126.5589668922" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="127.1278557810" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="127.6967446699" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="128.2656335588" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="128.8345224477" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="129.4034113366" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="129.9723002255" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="130.2567446699" length="2.2668480726" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="130.5411891144" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="131.1100780033" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="131.6789668922" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="132.2420507924" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="132.5235927425" length="1.7037641723" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="132.8051346926" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="133.3740235815" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="133.9429124704" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="134.2273569148" length="2.5483900227" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="134.5118013593" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="135.0806902482" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="135.6495791370" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="136.2126630373" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="136.7757469375" length="0.8504308390" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="136.7757469375" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="137.3446358264" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="137.6261777765" length="1.1348752834" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="137.9077197266" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="138.4766086155" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="138.7610530600" length="0.5659863946" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="139.0000000000" length="13.0000000000" sourcetrack="0">
+                    <structtype id="8" value="5"/>
+                </segment>
+                <segment time="139.0454975044" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="139.3270394545" length="1.7008616780" sourcetrack="0">
+                    <chordtype id="6" value="Emin"/>
+                </segment>
+                <segment time="139.6085814046" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="140.1774702935" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="140.7463591824" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="141.0279011325" length="3.4046258503" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="141.3094430826" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="141.8783319715" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="142.4472208604" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="143.0161097493" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="143.5791936495" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="144.1480825384" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="144.4325269829" length="1.7008616780" sourcetrack="0">
+                    <chordtype id="6" value="Gmin"/>
+                </segment>
+                <segment time="144.7169714273" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="145.2858603162" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="145.8489442164" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="146.1333886609" length="1.6979591837" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="146.4178331053" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="146.9867219942" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="147.5498058944" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="147.8313478445" length="1.6892517007" sourcetrack="0">
+                    <chordtype id="6" value="Cmaj"/>
+                </segment>
+                <segment time="148.1128897946" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="148.6759736949" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="149.3551573683" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="149.5205995452" length="5.4595918367" sourcetrack="0">
+                    <chordtype id="6" value="Gmaj"/>
+                </segment>
+                <segment time="149.9298512459" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="150.4987401348" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="151.0618240350" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="151.6365179126" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="152.0000000000" length="6.6266666667" sourcetrack="0">
+                    <structtype id="8" value="7"/>
+                </segment>
+                <segment time="152.2866766427" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="152.9194204069" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="153.5927990917" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="154.1500780033" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="154.7015519262" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="154.9801913819" length="1.7037641723" sourcetrack="0">
+                    <chordtype id="6" value="Emin"/>
+                </segment>
+                <segment time="155.2588308377" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="155.8161097493" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="156.3908036268" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="156.6839555543" length="1.1609977324" sourcetrack="0">
+                    <chordtype id="6" value="Emaj"/>
+                </segment>
+                <segment time="156.9771074817" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="157.5518013593" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="1" beat="1" tatum="1"/>
+                </segment>
+                <segment time="158.1381052141" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <segment time="158.5444544205" length="0.0000000000" sourcetrack="0">
+                    <beattype id="4" pattern="0" measure="0" beat="1" tatum="1"/>
+                </segment>
+                <global sourcetrack="0" length="158.6266666667">
+                    <analysedregion id="1"/>
+                    <analysedregion id="2"/>
+                    <analysedregion id="3"/>
+                    <analysedregion id="4"/>
+                    <analysedregion id="5"/>
+                    <analysedregion id="6"/>
+                    <analysedregion id="7"/>
+                    <analysedregion id="8"/>
+                    <analysedregion id="9"/>
+                    <tagtype id="1" value="Blues" confidence="0.8497895739"/>
+                    <tagtype id="2" value="Brass" confidence="0.9652979022"/>
+                    <tagtype id="2" value="Jazz/country/soul drum kit" confidence="0.7884216464"/>
+                    <tagtype id="3" value="Dynamic" confidence="0.7278756026"/>
+                    <rhythmtype id="5">
+                        <bpm_mean>103.9207218884</bpm_mean>
+                        <bpm_std>1.6374414544</bpm_std>
+                        <meter>32</meter>
+                        <percussivity>0.3324435513</percussivity>
+                        <complexity>0.1026404912</complexity>
+                        <speedA>24.2554353051</speedA>
+                        <speedB>210.9375000000</speedB>
+                        <periodicity>0.8870364091</periodicity>
+                        <rhythmpattern>0.2017665727 0.2193442615 0.1640615700 0.1716971323 0.1786738613 0.4100019630
+                            0.1701183214 0.1927086956 0.2479268641 0.2169089561 0.3062168277 0.9989965906 0.3079396853
+                            0.2541802450 0.2508578504 0.1835353778 0.1848280220 0.3080153151 0.1541524121 0.1494555615
+                            0.1906732838 0.1749678169 0.1529246731 0.3830972542 0.1673980134 0.1593132956 0.1502158502
+                            0.1509902374 0.1428290884 0.1544795852 0.0968652542 0.1018228657 0.1090152563 0.1090407055
+                            0.1335119177 0.2345772614 0.1062762220 0.0994393437 0.0975123440 0.0933486676 0.0944168404
+                            0.1110788368 0.0680079601 0.0710943077 0.0658136729 0.0675697075 0.0813488056 0.1222365584
+                        </rhythmpattern>
+                    </rhythmtype>
+                    <harmonictype id="7">
+                        <key>G</key>
+                        <mode>maj</mode>
+                        <harmonicpattern>0.6529421026 0.4187966966 0.6266432903 0.5714824361 0.5595381563 0.5833319148
+                            0.4468358626 0.6628923399 0.4627144627 0.5689434642 0.5780411427 0.4948543022 0.5835816772
+                            0.4433186846 0.6278868848 0.5441037602 0.6284848900 0.5004958167 0.4782357252 0.6323097536
+                            0.5238176290 0.5939947406 0.4854760089 0.5698037342
+                        </harmonicpattern>
+                    </harmonictype>
+                </global>
+            </musicdescription>
+        </MusicDescriptionWrapper>
+    </DigitalAsset>
+</ass:DigitalAssetMessage>

@@ -1,0 +1,10 @@
+{
+  "xpathmapping": {
+    "dc:subject": "//FileManifest/Subject",
+    "dc:identifier": "//FileManifest/FileDetails/FileUuid",
+    "classification": "concat-all(//FileManifestMessage/FileManifest/Classification/Key, //FileManifestMessage/FileManifest/Classification/Value)",
+    "dc:title": "//FileManifest/FileDetails/FileUri"
+  },
+  "xpathnsprefix": {"fmns": "http://schemas.umusic.com/umg.eai.data-lake-messages.v1"}
+}
+
