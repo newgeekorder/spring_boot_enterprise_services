@@ -28,7 +28,7 @@ import org.apache.http.entity.StringEntity
 import org.apache.http.impl.auth.BasicScheme
 import org.apache.http.impl.client.CloseableHttpClient
 import org.apache.http.impl.client.HttpClientBuilder
-import org.apache.http.impl.client.HttpClients
+import org.apache.http.impl.client.HttpClients 
 import org.apache.http.impl.conn.BasicHttpClientConnectionManager
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager
 import org.apache.http.protocol.HttpContext
