@@ -22,35 +22,43 @@ class EnterpriseMessage extends XmlHelper {
 
 
     String enterpriseHeader = '''<?xml version="1.0" encoding="UTF-8"?>
-<EnterpriseMessage>
-    <EnterpriseHeader>
-        <MessageId>${messageId}</MessageId>
-        <ThreadId>42143eeb-1387-4f35-af74-8f4d763be64f</ThreadId>
-        <CorrelationId></CorrelationId>
-        <CreatedUtc>${createdUtc}</CreatedUtc>
-        <Source>userSource</Source>
-        <Action>Publish</Action>
-        <Communication>Asynchronous</Communication>
-        <Resource>
-            <ResourceName>${messageType}</ResourceName>
-            <ResourceId>${resourceId}</ResourceId>
-            <ResourceCreatedUtc>${resourceCreatedUtc}</ResourceCreatedUtc>
-        </Resource>
-    </EnterpriseHeader>
-    <MessageBody>
+<ns1:EnterpriseMessage xmlns:ns2="http://es.umgi.com/XMLSchemas/CustomProps"
+                       xmlns:ns1="http://schemas.umusic.com/enterprise/services/2014/05">
+    <ns1:EnterpriseHeader>
+        <ns1:MessageId>${messageId}</ns1:MessageId>
+        <ns1:ThreadId>42143eeb-1387-4f35-af74-8f4d763be64f</ns1:ThreadId>
+        <ns1:CreatedUtc>${createdUtc}</ns1:CreatedUtc>
+        <ns1:Source>DataLake</ns1:Source>
+        <ns1:Action>Publish</ns1:Action>
+        <ns1:Communication>Asynchronous</ns1:Communication>
+        <ns1:Resource>
+            <ns1:ResourceName>filemanifestmessage</ns1:ResourceName>
+            <ns1:ResourceId>${resourceId}</ns1:ResourceId>
+            <ns1:ResourceCreatedUtc>${resourceCreatedUtc}</ns1:ResourceCreatedUtc>
+        </ns1:Resource>
+    </ns1:EnterpriseHeader>
+    <ns1:MessageBody>
         ${messageBody}
-    </MessageBody>
-</EnterpriseMessage>'''
+    </ns1:MessageBody>
+</ns1:EnterpriseMessage>'''
 
 
     public String getResult(){
         return result;
     }
 
+    // strip the leading <?xml version
+    public String stripLeadingXml(String message){
+        if ( message.startsWith("<?xml")){
+            message.replaceFirst("<\\?xml([\\s\\S]*)\\?>", "")
+        }
+    }
+
     public String createEnterpriseMessage(String messageBody, String messageType) {
+        messageBody = stripLeadingXml(messageBody);
         parse(messageBody)
 
-        this.messageType = messageType;
+        this.messageType = messageType.toLowerCase();
         messageId = getXpathItem("//MessageHeader/MessageId")
         createdUtc = getXpathItem("//MessageHeader/ResourceUtcDateTimeStamp")
         messageUtc = getXpathItem("//MessageHeader/MessageUtcDateTimeStamp")
@@ -61,7 +69,7 @@ class EnterpriseMessage extends XmlHelper {
         // s3 object id is messageid and a stripped createdUTC
         objectId = messageId + "_" + createdUtc.replaceAll("Z|T|\\.|:|-","")
         Map data = ["messageId": messageId, "createdUtc": createdUtc, "messageUtc": messageUtc, "source": source, "resourceId": resourceId, "resourceCreatedUtc"
-                               : resourceCreatedUtc, "messageType": messageType]
+                               : resourceCreatedUtc, "messageType": messageType.toLowerCase()]
         //parse the message body and create the enterprise message
         data.put("messageBody", messageBody)
 

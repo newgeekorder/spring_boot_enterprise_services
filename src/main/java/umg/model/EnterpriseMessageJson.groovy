@@ -88,7 +88,7 @@ class EnterpriseMessageJson extends XmlHelper {
                     }
                 }
             }
-            jsonOut.put("raw_message", StringEscapeUtils.unescapeJavaScript(getDocumentToSingleLine()))
+            jsonOut.put("raw_message", StringEscapeUtils.escapeJavaScript(getDocumentToSingleLine()))
 //            println "Result json for $messageType \n " + jsonOut.toString(4)
             return jsonOut
         } catch (Exception e) {
@@ -98,27 +98,20 @@ class EnterpriseMessageJson extends XmlHelper {
 
     }
 
-    public String concatAll(String valueStr) {
+    public ArrayList concatAll(String valueStr) {
         String[] xpathValues = (valueStr =~ /concat-all\((.*),(.*)\)/)[0]
 //        println "extracted keyXpath " + xpathValues[1]
 //        println "extracted value  " + xpathValues[2]
 
         def keys = getXpathList(xpathValues[1])
         def values = getXpathList(xpathValues[2])
-        String result = "["
+        ArrayList result = new ArrayList()
         int i = 0;
         keys.each {
-            result += it + ":" + values[i]
-            i++
-            if (keys.size() > i) {
-                result += ","
-            }
-
+            result.add(it + ":" + values[i])
         }
-        result += "]"
         println "concatAll got result " + result
         return result
-
     }
 
     public String  readElastic(){

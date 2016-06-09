@@ -1,0 +1,35 @@
+{
+  "took": 1,
+  "timed_out": false,
+  "_shards": {
+    "total": 3,
+    "successful": 3,
+    "failed": 0
+  },
+  "hits": {
+    "total": 1,
+    "max_score": 2.5040774,
+    "hits": [
+      {
+        "_index": "resources_v22",
+        "_type": "resource",
+        "_id": "filemanifestmessage_ffa249fa-d599-2827-41f7-7f30c2b516e5",
+        "_score": 2.5040774,
+        "_source": {
+          "resource_created_utc": "2016-04-03t20:10:27.000z",
+          "thread_id": "1d883ad8-4a09-4d05-8735-63d498b7634es",
+          "dc:subject": "Consumer",
+          "raw_message": "<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\" standalone=\\\"no\\\"?><EnterpriseMessage><EnterpriseHeader><MessageId>f4106bd8-b9e6-4fb1-aa50-4984889f04ac</MessageId><ThreadId>42143eeb-1387-4f35-af74-8f4d763be64f</ThreadId><CorrelationId/><CreatedUtc>2016-04-03T20:10:27.000Z</CreatedUtc><Source>userSource</Source><Action>Publish</Action><Communication>Asynchronous</Communication><Resource><ResourceName>FileManifestMessage</ResourceName><ResourceId>ffa249fa-d599-2827-41f7-7f30c2b516e5</ResourceId><ResourceCreatedUtc>2016-04-03T20:10:27.000Z</ResourceCreatedUtc></Resource></EnterpriseHeader><MessageBody><ns2:FileManifestMessage xmlns:ns2=\\\"http://schemas.umusic.com/umg.eai.data-lake-messages.v1\\\"><MessageHeader><MessageId>f4106bd8-b9e6-4fb1-aa50-4984889f04ac</MessageId><MessageSource>DataLake</MessageSource><MessageUtcDateTimeStamp>2016-04-07T06:36:59.619Z</MessageUtcDateTimeStamp><ResourceType>File</ResourceType><ResourceId>ffa249fa-d599-2827-41f7-7f30c2b516e5</ResourceId><ResourceUtcDateTimeStamp>2016-04-03T20:10:27.000Z</ResourceUtcDateTimeStamp><SchemaVersion>1</SchemaVersion><DefaultLanguageScriptCode>en-US</DefaultLanguageScriptCode><ReplyTo>GlobalMusicMartDataPipelineTeam@umusic.com</ReplyTo></MessageHeader><FileManifest><Owner>ERS</Owner><Source>Spotify</Source><Subject>Consumer</Subject><TimePeriod><Date>2016-03-31</Date></TimePeriod><TerritorialCoverage>BO</TerritorialCoverage><FileSensitivity>Protected</FileSensitivity><Classification><Key>type</Key><Value>streams</Value></Classification><Classification><Key>formatVersion</Key><Value>v2</Value></Classification><FileVersionType>New</FileVersionType><FileDetails><FileUuid>ffa249fa-d599-2827-41f7-7f30c2b516e5</FileUuid><FileUri uriType=\\\"S3\\\">                s3://umg-ers-data/source/spotify/v2/streams/year=2016/month=03/day=31/country=BO/streams_20160331_BO.gz</FileUri><ContentType>gz</ContentType><PackageInternalContentType>JSON</PackageInternalContentType><FileSpecification>spotify-daily-spec.docx</FileSpecification><FilesPerPackage>1</FilesPerPackage><Md5CheckSum>1CFE89C2E1C77F44BCA7C0967C0E66BD</Md5CheckSum><FileSize_Bytes>6101406</FileSize_Bytes><OriginalFileName>streams_20160331_BO.gz</OriginalFileName><FileCreatedUtc>2016-04-03T20:10:27.000Z</FileCreatedUtc></FileDetails></FileManifest></ns2:FileManifestMessage></MessageBody></EnterpriseMessage>",
+          "dc:title": "s3://umg-ers-data/source/spotify/v2/streams/year=2016/month=03/day=31/country=BO/streams_20160331_BO.gz",
+          "resource_id": "ffa249fa-d599-2827-41f7-7f30c2b516e5",
+          "message_id": "f4106bd8-b9e6-4fb1-aa50-4984889f04ac",
+          "message_type": "filemanifest",
+          "created_utc": "2016-04-03t20:10:27.000z",
+          "classification": "[type:streams,formatVersion:v2]",
+          "version": "20160524053013820",
+          "dc:identifier": "ffa249fa-d599-2827-41f7-7f30c2b516e5"
+        }
+      }
+    ]
+  }
+}

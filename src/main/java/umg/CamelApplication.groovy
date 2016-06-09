@@ -11,9 +11,13 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.support.AbstractApplicationContext;
-import umg.routes.FileToS3AndEsRoute;
-import umg.routes.RestRoute;
+import org.springframework.context.support.AbstractApplicationContext
+import umg.routes.FileToMuleRoute
+import umg.routes.FileToS3AndEsRoute
+import umg.routes.FileTransfer
+import umg.routes.QueryMule;
+import umg.routes.RestRoute
+import umg.routes.TestRoute;
 
 
 
@@ -29,14 +33,23 @@ public class CamelApplication {
     @Autowired
     private ApplicationContext springContext;
 
-//    @Autowired
-//    private TestRoute testRoute;
+    @Autowired
+    private TestRoute testRoute;
 
     @Autowired
     private RestRoute restRoute;
 
     @Autowired
+    private FileTransfer fileTranfer;
+
+    @Autowired
     private FileToS3AndEsRoute fileToS3AndEsRoute;
+
+    @Autowired
+    private FileToMuleRoute fileToMuleRoute;
+
+    @Autowired
+    private QueryMule queryMule;
 
     public static void main( String[] args ) throws Exception {
         ApplicationContext springContext = SpringApplication.run(CamelApplication.class, args);
@@ -50,8 +63,11 @@ public class CamelApplication {
 
         //Add your routes here.
 //        camelContext.addRoutes(testRoute);
-        camelContext.addRoutes(fileToS3AndEsRoute);
-        camelContext.addRoutes(restRoute);
+//        camelContext.addRoutes(fileToS3AndEsRoute)
+//        camelContext.addRoutes(fileTranfer)
+//        camelContext.addRoutes(restRoute);
+        camelContext.addRoutes(queryMule);
+        camelContext.addRoutes(fileToMuleRoute);
         return camelContext;
     }
 

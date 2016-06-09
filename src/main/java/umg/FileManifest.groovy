@@ -147,7 +147,7 @@ class FileManifest extends XmlHelper {
         FileManifest fm = new FileManifest()
 //        fm.init("/home/richard/workspace/workspace_spring/StaticGroovy/data/ffa249fa-d599-2827-41f7-7f30c2b516e5_20160403201027000.xml", "FileManifestMessage")
 //        fm.generateDefaultValues()
-//        fm.generateJson(new File("/home/richard/workspace/workspace_spring/StaticGroovy/jsonData/filemanifest.json"))
+//        fm.generateJson(new File("/home/richard/workspace/workspace_spring/StaticGroovy/jsonData/FileManifestMessage.json"))
 //
 //        // Now do FileManifest Group
         fm = new FileManifest()

@@ -520,7 +520,7 @@ public class XmlHelper  {
 
             String xml = getDocumentToString();
             xml = xml.replaceAll("[\n\r]", "");
-            xml = xml.replaceAll("\\s+<", "");
+            xml = xml.replaceAll("\\s+<", "<");
             return xml;
 
         } catch (Exception e) {

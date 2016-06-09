@@ -5,23 +5,29 @@ import io.searchbox.client.JestClient
 import io.searchbox.client.JestClientFactory
 import io.searchbox.client.JestResult
 import io.searchbox.client.config.HttpClientConfig
+import io.searchbox.core.DeleteByQuery
 import io.searchbox.core.Index
 import io.searchbox.core.Search
 import io.searchbox.core.SearchResult
+import io.searchbox.core.SearchScroll
+import io.searchbox.params.Parameters
 import org.json.JSONObject
 import org.json.JSONTokener
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
+import org.springframework.boot.context.properties.ConfigurationProperties
+import org.springframework.stereotype.Component
 import umg.FileManifest
 
 
-
+@Component
+@ConfigurationProperties(prefix = "application")
 public class ElasticHelper {
     private static Logger logger = LoggerFactory.getLogger(ElasticHelper.class);
 
     FileManifest fm = new FileManifest()
     JestClient client
-    static String TYPE = "resources"
+    static String TYPE = "resource" //without an s
     static String QA = "http://10.254.176.50:9200"
     static String UAT = "http://usaws19lvapp025:9200"
     public static String ELASTIC_URL;
@@ -30,16 +36,16 @@ public class ElasticHelper {
     static String ELASTIC_INDEX;
 
 
-    ElasticHelper(){
-            Properties props = new Properties()
-            InputStream propIn = ClassLoader.getSystemClassLoader().getResourceAsStream("application.properties");
-            props.load(propIn);
-            ELASTIC_URL = props.getProperty("elastic.url");
-            ELASTIC_USERNAME = props.getProperty("elastic.username", "");
-            ELASTIC_PASSWORD = props.getProperty("elastic.password", "");
-            ELASTIC_INDEX = props.getProperty("elastic.index")
-    }
+    ElasticHelper() {
+        Properties props = new Properties()
+        InputStream propIn = ClassLoader.getSystemClassLoader().getResourceAsStream("application.properties");
+        props.load(propIn);
+        ELASTIC_URL = props.getProperty("elastic.url");
+        ELASTIC_USERNAME = props.getProperty("elastic.username", "");
+        ELASTIC_PASSWORD = props.getProperty("elastic.password", "");
+        ELASTIC_INDEX = props.getProperty("elastic.index")
 
+    }
 
     /**
      * connect to elastic search
@@ -79,6 +85,46 @@ public class ElasticHelper {
     }
 
     /**
+     * This simulates the mule type query
+     */
+    public String searchQueryString(String query) {
+        JsonObject json = searchQueryStringJson(query)
+        return json.toString()
+    }
+
+    public JsonObject searchQueryStringJson(String query){
+        String queryWrapper = '''{
+   "query": {
+      "query_string": { "query" : "''' + query + '''" }
+   }
+}'''
+        println "Sending " + queryWrapper
+        Search search = new Search.Builder(queryWrapper)
+                .addIndex(ELASTIC_INDEX)
+                .build();
+
+        SearchResult result = client.execute(search);
+        JsonObject json = result.getJsonObject()
+        return json
+    }
+
+    /**
+     * Delete based on a Query String
+     */
+    public int deleteQueryString(String query ){
+        String queryWrapper = '''{
+   "query": {
+      "query_string": { "query" :  "''' + query + '''" }
+   }
+}'''
+        println "Sending " + queryWrapper
+        DeleteByQuery delete = new DeleteByQuery.Builder(queryWrapper)
+                .build();
+        JestResult result = client.execute(delete);
+        return result.getResponseCode()
+    }
+
+    /**
      * Do bulk update to elastic search
      * @param jsonScript
      */
@@ -111,26 +157,60 @@ public class ElasticHelper {
 //        moreResults = hits.size() > 0;
     }
 
+    public List  scrollSearch(String query, String index = ELASTIC_INDEX) {
+        int size = 100;
+        Search search = new Search.Builder(query)
+                .addIndex(index)
+//            .addType("my-document")
+//            .addSort(new Sort("_doc"))
+                .setParameter(Parameters.SIZE, 100)
+                .setParameter(Parameters.SCROLL, "5m")
+                .build();
+        JestResult result = client.execute(search);
+        List results = result.getSourceAsObjectList(Object.class);
+
+
+        // 2. Get the scroll_id to use in subsequent request
+        String scrollId = result.getJsonObject().get("_scroll_id").getAsString();
+
+        // 3. Issue scroll search requests until you have retrieved all results
+        boolean moreResults = true;
+        while (moreResults) {
+            SearchScroll scroll = new SearchScroll.Builder(scrollId, "5m")
+                    .setParameter(Parameters.SIZE, size).build();
+            result = client.execute(scroll);
+            results.addAll(result) // append the result to the list
+            def hits = result.getJsonObject().getAsJsonObject("hits").getAsJsonArray("hits");
+            moreResults = hits.size() > 0;
+        }
+
+        print results.size()
+        return results;
+    }
+
     /**
      * Single post to elastic search
      * @param jsonScript
      * @param demo
      */
-    public void post(String jsonScript, String messageType, boolean demo) {
+    public int post(String jsonScript, String messageType, boolean demo) {
         JSONObject json = new JSONObject(new JSONTokener(jsonScript))
         String resourceId = json.get("resource_id")
 
         // check if we are doing a practive run
         if (demo == false) {
             JestResult result = client.execute(new Index.Builder(jsonScript)
-                    .index("resources_v21")
+                    .index(ELASTIC_INDEX)
                     .type(TYPE.toLowerCase())
-                    .id(new String(messageType.toLowerCase() + "_" + resourceId))
+                    .id(messageType.toLowerCase() + "_" + resourceId)
                     .build());
-
-            println "posted " + result.responseCode + " error " + result.getErrorMessage()
+            logger.info("posting to Elastic id " + messageType.toLowerCase() + "_" + resourceId);
+            logger.info("posting to Elastic: " + jsonScript);
+            logger.info("posted " + result.responseCode + " got error msg: " + result.getErrorMessage());
+            return result.responseCode
         } else {
             println "Constructed " + jsonScript
+            return 1
         }
     }
 
@@ -141,13 +221,8 @@ public class ElasticHelper {
         return fm.generateJson(new File(jsonRulesPath))
     }
 
-
     /**
      *
-     * @param filePath
-     * @param messageType
-     * @param jsonRulesPath
-     * @param demo
      */
     public void getData(String filePath, String messageType, String jsonRulesPath, boolean demo) {
         // iterate over files
